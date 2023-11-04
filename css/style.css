@@ -1,0 +1,30 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.nav-item {
+    margin: 0 1rem;
+    font-weight: bold;
+    color: white;
+}
