@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 60px 50px;
-    background-color: var(--gray-dark);
+    background-color: var(--gray);
 }
 
 .header-list {
@@ -43,7 +43,7 @@ header {
     height: 70vh;
     margin: 0 auto;
     overflow: hidden;
-    background-color: var(--gray-dark);
+    background-color: var(--gray);
 }
 
 .carousel-slide {
@@ -71,7 +71,7 @@ header {
 }
 
 .round-button {
-    background-color: var(--gray-dark);
+    background-color: transparent;
     border: var(--gray) solid 2px;
     border-radius: 50%;
     padding: 2rem;
@@ -125,10 +125,76 @@ header {
 
 .active {
     border: var(--red) solid 2px;
-    background-color: var(--gray-dark);
+    background-color: transparent;
 }
 
 /* End main-section */
 
 
-/* Start main-section */
+/* Start Services */
+
+.service {
+    background-color: var(--light);
+}
+
+.service-header {
+    padding: 5rem 0 2.5rem 0;
+}
+
+.service-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.service-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--gray-dark);
+    padding: 0 21%;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+    border-radius: 5px;
+    height: 10rem;
+    width: 30%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 4rem;
+}
+
+.img-card {
+    margin: 0 0 1.5rem;
+}
+
+.card-title {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0 19px;
+}
+
+.card-descr {
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 1.2;
+    color: var(--gray-dark);
+}
+
+.card:hover {
+    background-color: #ff5959;
+    transform: translateY(-5px);
+    transition: 1s;
+}
