@@ -20,7 +20,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 60px 50px;
-    background-color: var(--gray);
+    background-image: url("../assets/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header-list {
@@ -35,7 +37,7 @@ header {
     color: white;
 }
 
-/* Start main-section */
+/* Start Carousel */
 
 .carousel-container {
     position: relative;
@@ -44,6 +46,7 @@ header {
     margin: 0 auto;
     overflow: hidden;
     background-color: var(--gray);
+    z-index: 2;
 }
 
 .carousel-slide {
@@ -73,10 +76,12 @@ header {
 .round-button {
     background-color: transparent;
     border: var(--gray) solid 2px;
-    border-radius: 50%;
-    padding: 2rem;
+    border-radius: 100%;
+    width: 68px;
+    height: 68px;
     top: 45%;
     cursor: pointer;
+    transition: .5s;
 }
 
 #prevBtn {
@@ -88,7 +93,7 @@ header {
     background-color: var(--red);
     border: none;
     left: 1%;
-    transition: 1s;
+    transition: .5s;
 }
 
 #nextBtn {
@@ -100,7 +105,7 @@ header {
     background-color: var(--red);
     border: none;
     right: 1%;
-    transition: 1s;
+    transition: .5s;
 }
 
 .carousel-dots {
@@ -128,7 +133,7 @@ header {
     background-color: transparent;
 }
 
-/* End main-section */
+/* End Carousel */
 
 
 /* Start Services */
@@ -198,3 +203,5 @@ header {
     transform: translateY(-5px);
     transition: 1s;
 }
+
+/* End Services */
