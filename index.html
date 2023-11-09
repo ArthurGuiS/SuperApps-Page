@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -115,13 +115,19 @@
                     SuperApps is your pioneering partner in innovation and progress. With an unwavering commitment to reliability and a friendly approach, we specialize in crafting exceptional Website and Mobile App solutions that empower businesses to excel in today's dynamic digital landscape.
                 </p>
             </div>
-            <div class="about-itens">
+            <div class="about-container">
+                <div class="about-abas">
+                    <button class="btn-button active" data-aba="pri">Our History</button>
+                    <button class="btn-button" data-aba="seg">Our Mission</button>
+                    <button class="btn-button" data-aba="ter">Friendly Support</button>
+                </div>
+            </div>
+            <div class="about-itens" data-content="pri">
                 <div class="ourh">
-                    <h3 class="iten-title">Our History</h3>
                     <p class="iten-descr">SuperApps was founded on the principles of innovation and excellence. Our journey began with a shared vision to revolutionize the way businesses interact with mobile and web applications. Over the years, we have evolved into a dynamic force, delivering cutting-edge solutions that redefine industry standards. Our history is a testament to our unwavering dedication to staying ahead of technological trends and transforming ambitious ideas into reality.</p>
                 </div>
                 <div class="ourgoals">
-                    <h3 class="our-title">Our Goals</h3>
+                    <h4 class="our-title">Our Goals:</h4>
                     <ul>
                         <li class="iten-about"><img src="./assets/right.svg">Innovation through Design and Technology</li>
                         <li class="iten-about"><img src="./assets/right.svg">Exceptional User Experience</li>
@@ -130,12 +136,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="about-itens">
-                <h3 class="iten-title">Our Mission</h3>
+            <div class="about-itens hide" data-content="seg">
                 <p class="iten-descr">Our mission at SuperApps is clear – to empower businesses with the tools they need to succeed in a rapidly evolving digital landscape. We are driven by the desire to create impactful and user-centric solutions that not only meet our clients' needs but also exceed their expectations. Through collaboration, creativity, and a deep understanding of technology, we are committed to becoming the catalyst for our clients' digital success.</p>
             </div>
-            <div class="about-itens">
-                <h3 class="iten-title">Friendly Support</h3>
+            <div class="about-itens hide" data-content="ter">
                 <p class="iten-descr">Central to our ethos is providing reliable and friendly support. We understand that navigating the digital landscape can be daunting, and that's why we're dedicated to guiding you at every step. Our steadfast support team is always ready to listen, assist, and ensure that your experience with us is productive and enjoyable. Your success is our priority, and we're here to make your journey with SuperApps dependable and gratifying.</p>
             </div>
 

@@ -37,3 +37,34 @@ function startSlideShow() {
 
 showSlide(currentSlide);
 startSlideShow();
+
+
+const abas = document.querySelectorAll('[data-aba]');
+
+hideContent = () => {
+    const contents = document.querySelectorAll('[data-content]')
+    contents.forEach(content => content.classList.add('hide'))
+}
+
+activeContent = (valor) => {
+    const content = document.querySelector(`[data-content="${valor}"]`)
+    content.classList.remove('hide')
+}
+
+hideAba = () => {
+    abas.forEach(aba => aba.classList.remove('active'))
+}
+
+activeAba = (aba) => {
+    aba.classList.add('active')
+}
+
+abas.forEach(aba => aba.addEventListener('click', () => {
+    const valor = aba.dataset.aba
+
+    hideContent()
+    hideAba()
+
+    activeContent(valor)
+    activeAba(aba)
+}))
