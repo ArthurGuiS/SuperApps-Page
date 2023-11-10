@@ -1,0 +1,59 @@
+:root{
+    --blue: #007bff;
+    --red: #ff5959;
+    --gray: #717173;
+    --gray-dark: #343a40;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #1f1f25;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+    width: 100%;
+    background-color: rgb(44, 48, 57);
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.nav-item {
+    margin: 0 1rem;
+    font-weight: 300;
+    color: white;
+    transition: .4s;
+}
+
+.nav-item:hover {
+    color: var(--gray);
+}
+
+/* reach Start */
+
+.reach {
+    padding: 100px 0 190px 0;
+    background-color: rgb(44, 48, 57);
+}
+
+.reach-title {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    background: linear-gradient(145deg,#ff5959,#ee077a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
